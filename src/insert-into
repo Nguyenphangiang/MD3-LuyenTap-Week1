@@ -1,0 +1,25 @@
+insert into address(addressID, address) values (1,'xuan thuy'),(2,'cau giay'),(3,'de la thanh'),(4,'nguyen chi thanh'),(5,'tran duy hung');
+insert into classes
+value (1,'english1','english','co nhieu giao vien nuoc ngoai');
+insert into classes
+value (2,'japanese1','japanese','co nhieu giao vien nuoc ngoai');
+insert into classes
+value (3,'ngu van','vietnamese','co giao van cao');
+insert into classes
+value (4,'tin hoc ','vietnamese','may tinh xin, nhieu game hay');
+insert into classes
+value (5,'toan','vietnamese','1 ngay la biet dem tien');
+insert into students(studentsID, studentsFullName, address_ID, studentsAge, studentsPhone, classes_ID)
+values (1,'Nguyen Y Van',5,16,191,3),(2,'Nguyen Cao Ky',4,18,192,3),
+    (3,'Hoang Duoc Su',3,17,193,2),(4,'Chau Ba Thong',2,15,194,2),
+       (5,'Le Van Tach',1,14,195,1),(6,'Le Kim Anh',1,16,196,1),
+       (7,'Nguyen Phan Giang',2,18,197,4),(8,'Ta Quang Buu',3,16,198,4),
+       (9,'Kim Yong Un',4,15,199,5),(10,'Jackie Lmao',5,17,291,5);
+
+insert into course(courseID, courseName, courseDescription)
+values (1,'khoa hoc 1','ngoai ngu'),(2,'khoa hoc 2','co ban');
+insert into point(pointID, course_ID, students_ID, point)
+values (1,1,3,100),(2,1,4,90),(3,1,5,96),(4,1,6,98)
+        ,(5,2,7,100),(6,2,8,99),(7,2,9,98),(8,2,10,97),
+       (9,2,1,96),(10,2,2,95),(11,2,3,90),(12,2,4,100),
+       (13,2,5,92),(14,2,6,98),(15,1,7,100)
